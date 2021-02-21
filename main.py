@@ -1,10 +1,15 @@
 import parse_json
+import sql_query
+
 from pip._vendor.distlib.compat import raw_input
 
 
 def main():
-    string_list = get_input()
-    parse_json.parse(string_list)
+    # string_list = get_input()
+    string_list = ["Name", "Max", "PORFORMA", "Email"]
+    confidence_map = parse_json.parse(string_list)
+    # sql_query.setup_table()
+    sql_query.insert_into_table(confidence_map)
 
 
 def get_input():
