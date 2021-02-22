@@ -1,7 +1,7 @@
 import json
-import array as arr
 
 
+# check if
 def check(word, string_list):
     # print wd
     n = len(string_list)
